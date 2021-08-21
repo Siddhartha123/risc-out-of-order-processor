@@ -1,0 +1,22 @@
+;Factorial of a number n. Needs approximately 1500 cycles for n=6
+; Authors: Mitul and Sidhartha, IIT Bombay
+ADI R3 R3 #000111;Enter the binary equivalent of the (n+1) value
+ADI R5 R5 #000110
+ADI R1 R1 #000001;Stores the final result
+ADI R2 R2 #000010 
+BEQ R3 R1 #001111 
+BEQ R3 R2 #001101
+BEQ R1 R0 #000100
+ADD R6 R6 R2
+ADI R0 R0 #000001
+JLR R4 R5
+LW R0 R4 #000000
+SW R6 R4 #000001
+LW R1 R4 #000001
+ADI R2 R2 #000001
+LW R6 R4 #000000
+BEQ R3 R2 #000011
+JLR R4 R5
+ADI R1 R1 #000001
+NOP
+NOP

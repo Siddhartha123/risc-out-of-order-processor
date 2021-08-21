@@ -1,0 +1,14 @@
+;Cube of A Number.
+; Authors: Mitul and Sidhartha, IIT Bombay
+ADI R1 R1 #000101; Enter the binary equivalent of the number.
+ADI R3 R3 #000010
+BEQ R1 R0 #000100
+ADD R2 R2 R1 ; Result 
+ADI R0 R0 #000001
+JLR R4 R3
+ADI R3 R3 #000101
+BEQ R1 R6 #000100
+ADD R5 R2 R5; The Final Value is in R5.
+ADI R6 R6 #000001
+JLR R0 R3
+NOP

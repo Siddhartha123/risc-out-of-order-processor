@@ -1,0 +1,8 @@
+;Subtraction of two numbers a-b. 
+; Authors: Mitul and Sidhartha, IIT Bombay
+ADI R0 R0 #000101; Binary Equivalent Of Number a
+ADI R1 R1 #000101; Binary Equivalent Of Number b
+NDU R1 R1 R1;
+ADI R1 R1 #000001
+ADD R0 R0 R1
+ADD R0 R6 R6;Result in R0

@@ -1,0 +1,12 @@
+;Fibonacci Program. R2 has the result
+; Authors: Mitul and Sidhartha, IIT Bombay
+ADI R1 R1 #000001
+ADI R6 R6 #001111; R6 has the no. of terms printed
+ADI R5 R5 #000011
+BEQ R3 R6 #000110 
+ADD R2 R1 R0
+SM R4 #00000110
+LM R4 #00000011
+ADI R3 R3 #000001
+JLR R4 R5
+NOP

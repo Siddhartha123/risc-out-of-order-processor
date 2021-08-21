@@ -1,0 +1,11 @@
+;Multiplication c=a*b. R1 stores a. R5 stores b. Result c is in R2
+; Authors: Mitul and Sidhartha, IIT Bombay
+ADI R0 R0 #000000
+ADI R1 R1 #000101; Enter binary equivalent of a
+ADI R5 R5 #000110; Enter binary equivalent of b
+ADI R3 R3 #000100
+BEQ R1 R0 #000100
+ADD R2 R2 R5 ; Result 
+ADI R0 R0 #000001
+JLR R4 R3
+NOP

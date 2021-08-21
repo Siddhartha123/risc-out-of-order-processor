@@ -1,0 +1,8 @@
+;Sum of firts n natural numbers. R2 has the result
+; Authors: Mitul and Sidhartha, IIT Bombay
+ADI R1 R0 #001111; Enter the value of n
+ADI R3 R3 #000010
+BEQ R0 R1 #000100
+ADI R0 R0 #000001
+ADD R2 R2 R0
+JLR R4 R3
