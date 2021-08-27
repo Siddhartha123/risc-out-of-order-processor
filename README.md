@@ -24,3 +24,8 @@
 
 
 **Note**: Both simulator and assembler assume correctness of syntax of assembly code provided.
+
+
+## References
+1. https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf
+2. https://inst.eecs.berkeley.edu/~cs61c/fa17/img/riscvcard.pdf
